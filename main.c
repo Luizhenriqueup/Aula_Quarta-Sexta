@@ -1,14 +1,24 @@
 #include <stdio.h>
 int main()
 {
-    char v1, v2, v3;
-    printf("informe o primeiro caracter:");
-    scanf("%c", &v1);
-    printf("informe o segundo caracter:");
-    scanf(" %c", &v2);
-    printf("informe o terceiro caracter:");
-    scanf(" %c",&v3);
-    printf("caracteres informados: %c %c %c\n", v1, v2, v3);
+    int a;
+    int b;
+    int c;
+    int x;
+    printf("informe um numero para letra a:");
+    scanf("%d", &a);
+    printf("informe um numero para letra b:");
+    scanf("%d", &b);
+    printf("informe um numero para letra c:");
+    scanf("%d", &c);
+    x = 2 * ((a - c)/8) - 5 * b;
+    printf("valor de x: %d\n", x);
+
+
+
+
+
+
 
     return 0;
 }
