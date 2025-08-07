@@ -26,3 +26,26 @@ int main ()
 //calcula e escreve o resultado da soma, da multiplicação, da
 //subtração, da divisão e do resto da divisão do primeiro pelo segundo
 //número
+
+
+
+#include <stdio.h>
+int main()
+{
+    int a;
+    int b;
+    int c;
+    int x;
+    printf("informe um numero para letra a:");
+    scanf("%d", &a);
+    printf("informe um numero para letra b:");
+    scanf("%d", &b);
+    printf("informe um numero para letra c:");
+    scanf("%d", &c);
+    x = 2 * ((a - c)/8) - 5 * b;
+    printf("valor de x: %d\n", x);
+    return 0;
+     }
+//Implemente um algoritmo em C que recebe como entrada três
+//números reais informados pelo usuário (a, b e c), calcula e escreve o
+//resultado da expressão x = 2 * ( ( a – c ) / 8 ) – b * 5
