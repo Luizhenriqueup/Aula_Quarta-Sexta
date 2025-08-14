@@ -1,0 +1,138 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    /*int num, dezena, aux;
+    printf("informe um numero de 3 digitos:");
+    scanf("%d", &num);
+    aux = num/10;
+    dezena = aux % 10;
+    printf("dezena: %d\n", dezena);*/
+
+
+
+
+
+    /*int num, dia, mes, ano, aux;
+    printf("informe uma data:");
+    scanf("%d", &num);
+    dia = num/10000;
+    aux = num % 10000;
+    mes = aux / 100;
+    ano = aux % 100;
+    printf("dia: %d mes: %d ano: %d", dia, mes, ano);*/
+
+
+
+
+
+
+    /*ACHAR CON, SENO, TANS
+    double angulo, seno, cons, tans;
+    printf("informe o valor do angulo:");
+    scanf("%lf", &angulo);
+    seno = sin(angulo);
+    cons = cos(angulo);
+    tans = tan(angulo);
+    printf("seno: %.2lf\n", seno);
+    printf("cosseno? %.2lf\n", cons);
+    printf("tangente: %.2lf\n", tans);*/
+
+
+
+
+
+
+
+    /*para achar a raiz
+    double num, raiz;
+    printf("informe um numero:");
+    scanf("%lf", &num);
+    raiz = sqrt(num);
+    printf("a raiz do numero é: %.2lf.\n", raiz);*/
+
+
+
+
+
+    /* Exemplo: implemente um algoritmo em C que recebe dois
+    números do usuário, x e y, e retorna xy.
+    double x, y, resultado;
+    printf("informe o valor de x:");
+    scanf("%lf", &x);
+    printf("informe o valor de y:");
+    scanf("%lf", &y);
+    resultado = pow(x, y);
+    printf("resultado: %.2lf\n", resultado);*/
+
+
+
+
+    /* Exemplo: implemente um algoritmo em C que recebe um número decimal
+do usuário e retorna o número arredondado pelas funções floor, ceil e
+round.
+    double num;
+    printf("informe um numero:");
+    scanf("%lf", &num);
+    printf("floor: %lf\n", floor(num));
+    printf("ceil: %lf\n", ceil(num));
+    printf("round: %lf\n", round(num));*/
+
+
+
+
+    /*Escreva um algoritmo em C que recebe do usuário um número e imprime seu quadrado e seu
+cubo
+    double num, quadrado, cubo;
+    printf("informe um numero:");
+    scanf("%lf", &num);
+    quadrado = pow(num, 2);
+    cubo = pow(num, 3);
+    printf("o numero a quadrado é: %.2lf\n o numero do cubo é %.2lf\n", quadrado, cubo);*/
+
+
+
+
+
+
+    /*
+    Escrever um algoritmo em C que recebe dois números do usuário e retorna a raiz quadrada da
+mulNplicação desses númerosdouble num, num2, multi, raiz;
+    printf("infome um numero:");
+    scanf("%lf", &num);
+    printf("informe outro numero:");
+    scanf("%lf", &num2);
+    multi = num * num2;
+    raiz = sqrt(multi);
+    printf("a multiplicacao desse numero é: %.2lf\n a raiz quadrada é: %.2lf\n", multi, raiz);*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    return 0;
+}
