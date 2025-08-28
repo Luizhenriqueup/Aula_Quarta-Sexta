@@ -4,72 +4,104 @@
 
 int main()
 {
-   /*double peso, altura, imc;
-   printf("informe o seu peso:");
-   scanf("%lf", &peso);
-   printf("informe a sua altura:");
-   scanf("%lf", &altura);
-   imc = peso/ (altura*altura);
-   printf("imc: %.2lf\n", imc);
-   if(imc < 18.5){
-   printf("magreza!\n");
-   }
-else if(imc >= 18.5 && imc < 24.9){
-    printf("Peso normal!\n");
+
+  /*int dia;
+  printf("informe um dia da semana de 1 a 7:");
+  scanf("%d", &dia);
+  switch (dia){
+  case 1: {
+  printf("domingo\n");
+  break;
+  }
+  case 2: {
+    printf("sabado\n");
+    break;
+  }
+  case 3:{
+      printf("sexta\n");
+      break;
+  }
+  case 4: {
+  printf("quinta\n");
+  break;
+  }
+  case 5:{
+  printf("quarta\n");
+  break;
+  }
+  case 6:{
+  printf("terça\n");
+  break;
+  }
+  case 7:{
+  printf("segunda\n");
+  break;
+  }
+  default: {
+  printf("erro"); }*/
+
+
+  /*char conceito;
+  printf("informe o teu conceito de A, B, C, D:");
+  scanf("%c", &conceito);
+  switch(conceito){
+
+  case 'a':{
+      printf("exelente");
+      break;}
+  case 'b':{
+      printf("bom");
+      break;}
+  case 'c':{
+    printf("regular");
+    break;}
+  case 'd':{
+    printf("reprovado");
+    break;}
+  default:{
+      printf("erro");}
+}*/
+
+
+
+
+
+char operador;
+double a, b;
+printf("digita o valor q voce quer calcular:");
+scanf("%lf %lf", &a, &b);
+printf("me indica um operador:");
+scanf(" %c", &operador);
+switch(operador){
+case '+': {
+printf("%.2lf %c %.2lf = %.2lf", a, operador, b, (a+b));
+break;
 }
-else{
-    printf("obesidade");
+case '-': {
+printf("%.2lf %c %.2lf = %.2lf", a, operador, b, (a-b));
+break;
 }
-*/
-  /*int opcao;
-  double preco, preco_paga;
-  printf("informe o preco do produto:");
-  scanf("lf", &preco);
-  printf("1 - A vista, em dinheiro ou cheque\n 2 - vezes no cartao\n 3 - Em duas vezes sem juros\n 4 - Em duas vezes com juros\n");
-  scanf("%d", &opcao);
-  if (opcao == 1){
-    preco_paga = preco - preco *0.1;
-    printf("valor a ser pago: %2.lf\n", preco_paga);
-  }
-  else if(opcao == 2){
-    preco_paga = preco - preco*0.15;
-    printf("valor a ser pago: %2.lf\n", preco_paga);
-  }
-  else if(opcao = 3){
-    preco_paga = preco / 2;
-    printf("valor a ser pago: %2.lf\n", preco_paga);
-  }
-  else if(opcao = 4){
-    preco_paga = (preco + preco *0.1) / 2;
-    printf("valor a ser pago: %2.lf\n", preco_paga);
-  }
-  else{
-    printf("erro");
-  }*/
+case '/': {
+printf("%.2lf %c %.2lf = %.2lf", a, operador, b, (a/b));
+break;
+}
+case '*': {
+printf("%.2lf %c %.2lf = %.2lf", a, operador, b, (a*b));
+break;
+}
+
+
+}
 
 
 
 
-  double a, b, c, delta, x1, x2;
-  printf("informe um valor a:");
-  scanf("%lf", &a);
-  printf("informe um valor b:");
-  scanf("%lf", &b);
-  printf("informe um valor c:");
-  scanf("%lf", &c);
-  delta = b*b - 4*a*c;
-  if (delta < 0){
-    printf("nao existem raizes reais");
-  }
-  else if(delta == 0){
-    x1 = -b/(2*a);
-    printf("ha apenas uma raiz real: %.2lf", x1);
-  }
-  else{
-    x1 = (-b + sqrt(delta))/(2*a);
-    x2 = (-b - sqrt(delta))/(2*a);
-    printf("raizes reais: %.2lf, %.2lf", x1, x2);
-  }
+
+
+
+
+
+
 
 
 
