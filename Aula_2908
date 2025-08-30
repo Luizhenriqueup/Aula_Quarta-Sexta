@@ -1,0 +1,81 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main ()
+{
+    /*int n =1;
+    while(n <= 20){
+        printf("%d\t", n);
+        n++;
+    }*/
+
+
+    /*int n, fat = 1;
+    printf("informe um numero:");
+    scanf("%d", &n);
+    while(n >= 1){
+        fat *= n;
+        n--;
+    }
+    printf("fatorial: %d", fat);
+    */
+
+
+    /*int num, cont = 1, soma;
+    while (cont <= 10){
+        printf("Informe o %d numero:", cont);
+        scanf("%d", &num);
+        soma += num;
+        cont++;
+    }
+    printf("a soma dos numeros eh: %d", soma);
+    */
+
+
+    /*int num, cont = 1, soma=0, negativos = 0;
+    while (cont <= 15){
+        printf("infome o %d numero:", cont);
+        scanf("%d", &num);
+        if (num >= 0){
+          soma += num;
+        }
+        else{
+             negativos++;
+        }
+        cont++;
+    }
+printf("soma total: %d\n", soma);
+printf("numeros negativos: %d", negativos);*/
+
+
+  int num, maior, menor, cont = 2;
+  printf("informe o 1 numero:");
+  scanf("%d", &num);
+  maior = num;
+  menor = num;
+  while(cont <= 10){
+    printf("informe o %d numero", cont);
+    scanf("%d", &num);
+    if (num > maior){
+        maior = num;
+    }
+    else if(num < menor){
+        menor = num;
+    }
+    cont++;
+  }
+printf("maior: %d\nMenor: %d\n", maior, menor);
+
+
+
+
+
+
+
+
+
+  return 0;
+}
+
+
+
