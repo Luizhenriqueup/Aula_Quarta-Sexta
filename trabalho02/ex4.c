@@ -1,27 +1,42 @@
 #include <stdio.h>
-#include <math.h>
 
 int main() {
-     int h, m, entrada, saida, duracao, horas;
-     double valor = 0;
-     printf("informe sua hora de entrada em horas e minutos:");
-     scanf("%d %d", &h, &m);
-     entrada = h * 60 + m;
-     printf("Agora me informa a sua hora de saida em horas e minutos:");
-     scanf("%d %d", &h, &m);
-     saida = h * 60 + m;
-    if (saida < entrada)
-    saida += 24 * 60;
-    duracao = saida - entrada;
-    horas = (int) ceil(duracao / 60.0);
+    int hChegada, mChegada, hPartida, mPartida;
+    int chegadaMin, partidaMin, tempoMin, horas;
+    float valor = 0;
 
-    if (horas <= 2)
-    valor = horas * 1.0;
-    else if (horas <= 4) valor = 2 + (horas - 2) * 1.40;
-    else valor = 2 + 2 * 1.40 + (horas - 4) * 2.0;
+    printf("Digite hora e minuto da chegada: ");
+    scanf("%d %d", &hChegada, &mChegada);
 
-    printf("Voce ficou %d hora(s).\n", horas);
-    printf("Total a pagar: R$ %.2f\n", valor);
+    printf("Digite hora e minuto da partida: ");
+    scanf("%d %d", &hPartida, &mPartida);
+
+  
+    chegadaMin = hChegada * 60 + mChegada;
+    partidaMin = hPartida * 60 + mPartida;
+
+
+    if (partidaMin < chegadaMin) {
+        partidaMin += 24 * 60;
+    }
+
+
+    tempoMin = partidaMin - chegadaMin;
+
+
+    horas = (tempoMin + 59) / 60;
+
+
+    if (horas <= 2) {
+        valor = horas * 1.0;
+    } else if (horas <= 4) {
+        valor = 2 * 1.0 + (horas - 2) * 1.4;
+    } else {
+        valor = 2 * 1.0 + 2 * 1.4 + (horas - 4) * 2.0;
+    }
+
+    printf("Tempo estacionado: %d horas\n", horas);
+    printf("Valor a pagar: R$ %.2f\n", valor);
 
     return 0;
 }
